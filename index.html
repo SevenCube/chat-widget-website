@@ -9,7 +9,7 @@
 					content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
 		<link rel="stylesheet"
-					href="../chat-widget-website/widget/widget.css">
+					href="https://github.com/SevenCube/chat-widget-app/blob/main/dist/assets/index.css">
 		<script type='text/javascript'>
 			var div = document.createElement("div")
 			div.setAttribute("id", "app")
@@ -21,11 +21,11 @@
 				}
 			}
 			var intervalId = setInterval(appendDiv, 100)
-			var chatWidgetPath = '../chat-widget-website/widget/'
+			// var chatWidgetPath = '../chat-widget-website/widget/'
 			var chatWidget = document.createElement('script')
 			chatWidget.type = 'module'
 			chatWidget.async = true
-			chatWidget.src = chatWidgetPath + 'widget.js'
+			chatWidget.src = 'https://github.com/SevenCube/chat-widget-app/blob/main/dist/entries/index.js'
 			var s = document.getElementsByTagName('script')[0]
 			s.parentNode.insertBefore(chatWidget, s)
 		</script>
