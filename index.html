@@ -8,26 +8,8 @@
 		<meta name="viewport"
 					content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
-		<link rel="stylesheet"
-					href="https://sevencube.github.io/chat-widget-app/dist/assets/index.css">
-		<script type='text/javascript'>
-			var div = document.createElement("div")
-			div.setAttribute("id", "app")
-			function appendDiv() {
-				var parent = document.body
-				if (parent) {
-					parent.appendChild(div)
-					clearInterval(intervalId)
-				}
-			}
-			var intervalId = setInterval(appendDiv, 100)
-			var chatWidget = document.createElement('script')
-			chatWidget.type = 'module'
-			chatWidget.async = true
-			chatWidget.src = 'https://sevencube.github.io/chat-widget-app/dist/entries/index.js'
-			var s = document.getElementsByTagName('script')[0]
-			s.parentNode.insertBefore(chatWidget, s)
-		</script>
+		<script type='text/javascript'
+						src="widget.js"></script>
 	</head>
 
 	<body>
