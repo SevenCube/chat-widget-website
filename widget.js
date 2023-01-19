@@ -1,4 +1,5 @@
-var link = document.createElement('link');
+window.onload = function() {
+	var link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = 'https://sevencube.github.io/chat-widget-app/dist/assets/index.css';
 link.type = 'text/css';
@@ -19,3 +20,4 @@ var div = document.createElement("div")
 			chatWidget.src = 'https://sevencube.github.io/chat-widget-app/dist/entries/index.js'
 			var s = document.getElementsByTagName('script')[0]
 			s.parentNode.insertBefore(chatWidget, s)
+		}
